@@ -1,0 +1,116 @@
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_button {
+    height: auto;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(85, 85, 85);
+    font-style: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    @include media(tablet) {
+      color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  &_container {
+    position: relative;
+    background: #fff;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 10px;
+    overflow-y: scroll;
+
+    @include media(tablet) {
+      width: 55vw;
+    }
+
+    @include media(desktop) {
+      width: 45vw;
+    }
+
+    &_header {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      padding: 2.5%;
+      display: flex;
+      border-radius: 7.5px 7.5px 0 0;
+      border-bottom: 1px solid grey;
+      h1 {
+        text-align: center;
+        width: 92.5%;
+        font-weight: 600;
+        padding-right: 7.5%;
+      }
+      button {
+        text-align: center;
+        border-radius: 50px;
+        width: 7.5%;
+        font-weight: 300;
+        &:hover {
+          background-color: rgb(233, 233, 233);
+        }
+      }
+    }
+
+    &_form {
+      display: column;
+      padding: 17.5% 5%;
+
+      input {
+        width: 100%;
+        padding: 15px;
+      }
+
+      p {
+        margin-top: 12px;
+        font-size: 12px;
+      }
+
+      button {
+        margin-top: 12px;
+        width: 100%;
+        padding: 12px;
+        background-color: #e31d5e;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+
+    select {
+      width: 100%;
+      font-size: 13px;
+      color: grey;
+      padding: 15px;
+      border: 1px solid grey;
+      align-items: center;
+      cursor: pointer;
+      border-radius: 2px;
+
+      option {
+        width: 100%;
+        font-size: 13px;
+        color: grey;
+        padding: 15px;
+        border: 1px solid grey;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+    }
+  }
+}

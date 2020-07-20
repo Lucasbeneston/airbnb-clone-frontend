@@ -1,0 +1,19 @@
+html {
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  line-height: 1.75;
+}
+
+.container {
+  margin: 12vh 4% 0;
+
+  @include media(tablet) {
+    margin: 22vh 1% 0vh;
+    min-height: 100vh;
+  }
+
+  @include media(desktop) {
+    width: 65vw;
+    min-height: 100vh;
+    margin: 24vh 1% 14vh;
+  }
+}
